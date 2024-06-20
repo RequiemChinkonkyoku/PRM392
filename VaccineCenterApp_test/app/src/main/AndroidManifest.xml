@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BabyVaccinationTracker"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity_Edit_post"
+            android:exported="false" />
+
+        <service
+            android:name=".service.NotificationService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BabyProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CommunityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view_child_information"
+            android:exported="false" />
+        <activity
+            android:name=".children_data_management"
+            android:exported="false" />
+        <activity
+            android:name=".AddChatConversation"
+            android:exported="false" />
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Display_block_user"
+            android:exported="false" />
+        <activity
+            android:name=".ConversationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VaccinationCertificateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QrScannerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".reset_password"
+            android:exported="false" />
+        <activity
+            android:name=".See_detailed_vaccine_information"
+            android:exported="false" />
+        <activity
+            android:name=".search_vaccination"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrationRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".update_inforamtion_vaccine"
+            android:exported="false" />
+        <activity
+            android:name=".login_for_vaccine_center"
+            android:exported="false" />
+        <activity
+            android:name=".Register_for_vaccine_center"
+            android:exported="false" />
+        <activity
+            android:name=".create_vaccination"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_notification"
+        android:icon="@drawable/ic_notifications"
+        android:title="Thông báo"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_vaccine_care"
+        android:icon="@drawable/store_toolbar"
+        android:title="Các vắc-xin trong giỏ hàng"
+        app:showAsAction="always" />
+</menu>
